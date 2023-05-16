@@ -1,6 +1,6 @@
 # Hardhat Funding Project
 
-## About The Project
+## About This Project
 - It's part of the FCC Blockchain course.
 - In this smart contract, we have features for funding and withdrawing the amount.
 - It also stores the funders addresses with the amount they funded.

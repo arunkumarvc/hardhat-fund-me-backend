@@ -1,15 +1,23 @@
-# Hardhat Funding Project
+# FundMe
 
-## About This Project
-- It's part of the FCC Blockchain course.
-- In this smart contract, we have features for funding and withdrawing the amount.
-- It also stores the funders addresses with the amount they funded.
-- Only the contract deployer can withdraw the funded amount.
-- In this, we're using Chainlink's AggregatorV3Interface priceFeed to get the current price of the blockchain tokens.
+##A contract for crowd funding.
 
-## Built With
+### Features
 
-* [JavaScript](https://www.w3schools.com/js/)
-* [Solidity](https://soliditylang.org/)
-* [Hardhat](https://hardhat.org/)
-* [Ethers.js](https://docs.ethers.org/v5/)
+    Contributors can send Ether to the contract to fund a project.
+    The project owner can withdraw the funds once the funding goal is reached.
+    Contributors can view their total contribution and the total amount raised.
+    The contract is written in Javascript and Solidity, a programming language for smart contracts.
+
+
+### How to use
+
+    Deploy the contract to a blockchain network.
+    Send Ether to the contract to fund a project.
+    The project owner can withdraw the funds once the funding goal is reached.
+    Contributors can view their total contribution and the total amount raised by calling the getAddressToAmountFunded and getTotalFunded functions.
+
+### Security considerations
+
+    The project owner has control over the funds in the contract.
+    Contributors should only send Ether to contracts they trust.

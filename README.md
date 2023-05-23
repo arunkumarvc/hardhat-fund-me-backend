@@ -1,6 +1,6 @@
 # FundMe
 
-##A contract for crowd funding.
+## A contract for crowd funding.
 
 ### Features
 

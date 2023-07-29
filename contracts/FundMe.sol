@@ -13,15 +13,15 @@ error FundMe__NotOwner();
 // Natural Language Specification Format (NatSpec)
 /**
  * @title A contract for crowd funding
- * @author Patric Collins
- * @notice This contract is to demo a samplw funding contract
+ * @author Patrick Collins
+ * @notice This contract is to demo a sample funding contract
  * @dev This implements price feeds as our library
  */
 contract FundMe {
     // Type Declarations - Style Guide 5
     using PriceConverter for uint256;
 
-    // State Vriables - Style Guide 6
+    // State Variables - Style Guide 6
     address[] private s_funders;
     mapping(address => uint256) private s_addressToAmountFunded;
     address public immutable i_owner;
@@ -37,7 +37,7 @@ contract FundMe {
         _;
     }
 
-    // 1. parameterizing the pricefeed address, that stores in s_priceFeed variabe above
+    // 1. parameterizing the pricefeed address, that stores in s_priceFeed Variable above
     constructor(address priceFeedAddress) {
         i_owner = msg.sender;
         s_priceFeed = AggregatorV3Interface(priceFeedAddress);
@@ -81,7 +81,7 @@ contract FundMe {
         require(callSuccess, "call failed");
     }
 
-    // view / pure - Style Guide - Solidity Chainlink Style Guide - made variables private so creatd functions to call that variables
+    // view / pure - Style Guide - Solidity Chainlink Style Guide - made variables private so created functions to call that variables
     function getOwner() public view returns (address) {
         return i_owner;
     }

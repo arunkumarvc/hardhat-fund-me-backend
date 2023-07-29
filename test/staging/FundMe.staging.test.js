@@ -15,7 +15,7 @@ developmentChains.includes(network.name)
               fundMe = await ethers.getContract("FundMe", deployer);
           });
 
-          it("allows people to fund ans withdraw", async function () {
+          it("allows people to fund and withdraw", async function () {
               await fundMe.fund({ value: sendValue });
               await fundMe.withdraw();
               const endingBalance = await fundMe.provider.getBalance(
